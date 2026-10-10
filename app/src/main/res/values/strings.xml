@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FitPulse Admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="admin_panel">Admin Panel</string>
+    <string name="fitpulse_management">FitPulse Management</string>
+    <string name="this_month_revenue">This Month Revenue</string>
+    <string name="monthly_breakdown">Monthly Breakdown</string>
+    <string name="total_paid_by_members">Total Paid</string>
+    <string name="total_due_by_members">Total Due</string>
+</resources>

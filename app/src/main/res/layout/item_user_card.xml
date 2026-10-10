@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="?attr/colorSurfaceContainerLow"
+    app:cardElevation="0dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Avatar circle -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivUserAvatar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_person"
+            android:padding="10dp"
+            android:background="?attr/colorSecondaryContainer"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Material3.Circle"
+            android:scaleType="centerCrop" />
+
+        <!-- Name + Member ID -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/tvUserFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="—"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUserMemberId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#—"
+                android:textAppearance="?attr/textAppearanceBodySmall"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+        </LinearLayout>
+
+        <!-- Status chip -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipUserStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active"
+            android:clickable="false"
+            android:focusable="false"
+            app:chipBackgroundColor="?attr/colorTertiaryContainer"
+            android:textColor="?attr/colorOnTertiaryContainer"
+            app:chipMinHeight="28dp"
+            android:textAppearance="?attr/textAppearanceLabelSmall" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
